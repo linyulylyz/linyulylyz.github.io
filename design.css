@@ -1,0 +1,158 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-color {
+    background-color: #a5cfef;
+    height: 20px;
+}
+
+/* body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+} */
+
+#cover {
+    width: 100%;
+    height: 700px;
+    top: 0;
+    left: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#cover .img {
+    width: 1000px;
+    height: 100%;
+    position: relative;
+    background-color: #a5cfef;
+    border-top-right-radius: 600px;
+    border-bottom-right-radius: 600px;
+    animation: move 1s forwards linear;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(-55vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+#cover .title {
+    animation: move3 3s forwards linear;
+}
+
+@keyframes move3 {
+    from {
+        transform: translateX(1000px);
+    }
+
+    to {
+        transform: translateX(-800px);
+    }
+}
+
+#cover h1 {
+    font-size: 55px;
+    font-family: "Noto Sans TC", sans-serif;
+    animation: colorChange 3s linear;
+    color: #fff;
+}
+
+#cover h2 {
+    font-size: 60px;
+    font-family: "Noto Sans TC", serif;
+    font-weight: 500;
+    animation: colorChange 3s linear;
+    color: #fff;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #3a5467;
+    }
+
+    50% {
+        color: #a5cfef;
+    }
+
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
+
+#portfolio {
+    height: 400px;
+    width: auto;
+}
+
+#portfolio h3 {
+    font-size: 60px;
+    font-family: 'Noto Sans TC', serif;
+    font-weight: 800;
+    color: #ec8181;
+    margin-bottom: 0;
+}
+
+#design .box img:hover {
+    box-shadow: 5px 5px 0px #ec8181;
+    transform: translate(-5px, -5px);
+}
+
+#design {
+    width: 100%;
+    height: 500px;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    animation: move2 20s infinite linear;
+}
+
+#design .box {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#design .box img {
+    flex-shrink: 0;
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    transition: box-shadow 0.4s, transform 0.4s;
+    margin-bottom: 25px;
+}
+
+#design .box a {
+    color: #b2b2b2;
+    font-family: 'Noto Sans TC', serif;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#design .box b {
+    color: #233b51;
+    font-family: 'Noto Sans TC', serif;
+    text-decoration: none;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+@keyframes move2 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

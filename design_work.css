@@ -1,0 +1,49 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-color {
+    background-color: #a5cfef;
+    height: 20px;
+}
+
+#work1 .text-center img {
+    margin-top: 60px;
+    width: 900px;
+    height: 600px;
+    margin-bottom: 60px;
+}
+
+h1 {
+    color: #a5cfef;
+    font-family: "Noto Sans TC", serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 50px;
+    color: #bbbbbb;
+    font-family: "Noto Sans TC", serif;
+}
+
+p2 {
+    color: #bbbbbb;
+    font-family: "Noto Sans TC", serif;
+}
+
+#work1 ul {
+    color: #a5cfef;
+    font-family: 'Noto Sans TC';
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
